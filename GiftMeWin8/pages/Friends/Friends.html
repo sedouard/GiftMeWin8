@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>itemsPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/friends/friends.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/scripts/giftme/giftmeclientlibrary.js"></script>
+    <script src="/pages/friends/friends.js"></script>
+</head>
+<body>
+	<div class="mainGrid">
+		<header class="giftmeBanner" aria-label="Header content" role="banner">
+			<h1 class="titlearea win-type-ellipsis">
+				<span class="pagetitle" style="font-size:75%">GiftMe</span>
+			</h1>
+		</header>
+		<!-- This template is used to display each item in the ListView declared below. -->
+		<div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+			<div class="item">
+				<img class="item-image" src="#" data-win-bind="src:ProfilePicUrl; alt:title" />
+				<div class="item-overlay" style="margin-top: 11.5px;">
+					<h4 class="item-title" data-win-bind="textContent:Name"></h4>
+					<h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent:Birthday"></h6>
+				</div>
+			</div>
+		</div>
+		<progress id="ui_ProgressRing" class="win-ring win-large"></progress>
+		<div id="#ui_FriendsList" class="friendslist">
+    		<div  class="itemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{currentItem:{type:WinJS.UI.ObjectType.item, hasFocus:true, index:0}, itemDataSource:Friends.itemList.dataSource, itemTemplate:select('.itemtemplate'), oniteminvoked:select('.pagecontrol').winControl.itemInvoked, selectionMode:'none'}">
+    	</div>
+
+	</div>
+	<div class="searchGrid">
+		<div class="searchBox">
+			<input id="ui_SearchTextBox" placeholder="Search Friends" style="width:100%" type="text">
+		</div>
+		<div class="search">
+			<button id="ui_SearchButton" class="searchButton" style="width:47px; height:42px;"></button>
+		</div>
+	</div></div>
+	
+
+</body>
+		
+</body>
+</html>

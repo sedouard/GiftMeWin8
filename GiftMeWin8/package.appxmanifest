@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <Identity Name="52654GVoice.GiftMe" Version="1.1.0.2" Publisher="CN=67A07641-5D67-4A43-A315-AFCC29EAFA02" />
+  <Properties>
+    <DisplayName>GiftMe</DisplayName>
+    <PublisherDisplayName>GVoice</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="GiftMe" Description="GiftMe is a fun way to get gift ideas for your friends and family. Sign in with your facebook id and it will automagically provide gift suggestions for your friends based on their likes and interests." ForegroundText="light" BackgroundColor="#17A8E5" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png" ToastCapable="false">
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#17A8E5" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:ApplicationView MinWidth="width500" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="Blend" Version="12.0.41002.1" />
+  </build:Metadata>
+</Package>

@@ -1,0 +1,129 @@
+﻿.friendBarGrid {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: (1fr)[10];
+    -ms-grid-rows: (1fr)[20];
+}
+#ui_ProgRing {
+	-ms-grid-column: 4;
+    -ms-grid-row: 160;
+    -ms-grid-column-span: 10;
+    -ms-grid-row-span: 30;
+	width:100%;
+	height:100%;
+	color:whitesmoke;
+	z-index:10;
+	}
+.friendNotAvailable {
+	-ms-grid-column: 35;
+	-ms-grid-row:90;
+	-ms-grid-column-span: 60;
+	-ms-grid-row-span: 30;
+	font-size:300%;
+
+}
+.itemspage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+.itemspage {
+    -ms-grid-column: 31;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 70;
+    -ms-grid-row-span: 197;
+}
+header {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 10;
+    -ms-grid-row-span: 30;
+}
+
+.friendBar{
+	-ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 30;
+    -ms-grid-row-span: 200;
+	}
+
+/* This selector is used to prevent ui-dark/light.css from overwriting changes
+   to .win-surface. */
+.itemspage .itemslist .win-horizontal.win-viewport .win-surface {
+    margin-bottom: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 135px;
+}
+
+#ui_FriendImage{
+	-ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-span: 20;
+    -ms-grid-row-span: 20;
+	width: 100%; 
+	border-width:0px; 
+	height: 45%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain
+	}
+.friendName{
+	-ms-grid-column: 1;
+    -ms-grid-row: 12;
+    -ms-grid-column-span: 10;
+    -ms-grid-row-span: 2;
+	font-size:200%;
+	color:black
+	}
+.friendField1 {
+	-ms-grid-column: 1;
+	-ms-grid-row: 14;
+	-ms-grid-column-span: 10;
+	-ms-grid-row-span: 1;
+	color:black
+}
+.itemspage .itemslist {
+    height: 98.75%;
+    width: 99%;
+    z-index: 0;
+}
+
+    .itemspage .itemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }
+
+        .itemspage .itemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .itemspage .itemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            background: rgba(0, 0, 0, 0.65);
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .itemspage .itemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                color: rgba(255,255,255,0.87);
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .itemspage .itemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                color: rgba(255,255,255,0.6);
+                width: 220px;
+            }
+
+@media screen and (-ms-high-contrast) {
+    .itemspage .itemslist .item .item-overlay {
+        color: WindowText;
+    }
+}

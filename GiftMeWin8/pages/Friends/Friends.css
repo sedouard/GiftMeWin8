@@ -1,0 +1,135 @@
+﻿.giftmeBanner {
+    -ms-grid-column: 5;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 40;
+    -ms-grid-row-span: 30;
+}
+.searchBox {
+	-ms-grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 23;
+    -ms-grid-row-span: 30;
+	}
+#ui_ProgressRing {
+	-ms-grid-column: 4;
+    -ms-grid-row: 160;
+    -ms-grid-column-span: 10;
+    -ms-grid-row-span: 30;
+	width:100%;
+	height:100%;
+	color:whitesmoke;
+	z-index:10;
+	}
+.searchGrid {
+    -ms-grid-column: 71;
+    -ms-grid-row: 25;
+    -ms-grid-column-span: 25;
+    -ms-grid-row-span: 16;
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: (1fr)[30];
+    -ms-grid-rows: (1fr)[40];
+}
+.searchButton {
+    display: inline-block;
+    min-width: 0;
+    min-height: 0;
+    background-clip: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0;
+    text-align: center;
+
+    /* Normal sizing. */
+    width: 41px;
+    height: 41px;
+    font-size: 14pt;
+    line-height: 37px; /* line-height must match the content box height. */
+    vertical-align: baseline;
+}
+
+.searchButton:hover, .searchButton:hover:active {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+}
+.searchButton::before {
+    font-family: "Segoe UI Symbol";
+    font-weight: normal;
+    content: "\E1A3";
+    vertical-align: 50%;
+}
+.searchButton:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before, .win-back:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+    content: "\E1A3";
+}
+
+.search {
+    -ms-grid-column: 27;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 4;
+    -ms-grid-row-span: 26;
+
+}
+.friendslist {
+    -ms-grid-column: 5;
+    -ms-grid-row: 40;
+    -ms-grid-column-span: 100;
+    -ms-grid-row-span: 160;
+	height:100%; margin-bottom: 2px; margin-top: 0px; margin-left: 5px;
+	z-index:-1;
+}
+/* This selector is used to prevent ui-dark/light.css from overwriting changes
+   to .win-surface. */
+.friendslist .itemslist .win-horizontal.win-viewport .win-surface {
+    margin-bottom: 60px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 135px;
+}
+
+.friendslist .itemslist {
+    height: 100%;
+    width: 100%;
+}
+
+    .friendslist .itemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 180px;
+        width: 180px;
+    }
+
+        .friendslist .itemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .friendslist .itemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            background: rgba(0, 0, 0, 0.65);
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .friendslist .itemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                color: rgba(255,255,255,0.87);
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .friendslist .itemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                color: rgba(255,255,255,0.6);
+                width: 220px;
+            }
+
+@media screen and (-ms-high-contrast) {
+    .friendslist .itemslist .item .item-overlay {
+        color: WindowText;
+    }
+}

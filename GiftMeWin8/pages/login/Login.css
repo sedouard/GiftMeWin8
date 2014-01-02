@@ -1,0 +1,59 @@
+﻿.Login section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.bannerGrid {
+    -ms-grid-column: 30;
+    -ms-grid-row: 50;
+    -ms-grid-column-span: 47;
+    -ms-grid-row-span: 85;
+}
+.loginbanner {
+	-ms-grid-column: 1;
+    -ms-grid-row: 5;
+    -ms-grid-column-span: 40;
+    -ms-grid-row-span: 80;
+	}
+.taglineBanner {
+	font-size:18px;
+	-ms-grid-column: 2;
+    -ms-grid-row: 28;
+    -ms-grid-column-span: 40;
+    -ms-grid-row-span: 3;
+	}
+.bannerGrid {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: (1fr)[30];
+    -ms-grid-rows: (1fr)[40];
+}
+.page-header {
+	font-size:1000%;
+	align-content:center;
+	align-self:center;
+	width:100%;
+	height:100%;
+}
+.facebookIcon {
+-ms-grid-column: 1;
+-ms-grid-row: 34;
+-ms-grid-column-span: 40;
+-ms-grid-row-span: 6;
+}
+#ui_MainViewBox {
+	width:100%;
+	height:100%;
+	}
+#ui_FacebookIcon
+	{
+		border-width:0;
+		background-image:url('/images/connectfacebook.png');
+		background-repeat:no-repeat;
+		background-size:contain;
+
+		top:4.24px;
+		right:-13px;
+		height: 40.56px;
+		width: 227.44px;
+	}

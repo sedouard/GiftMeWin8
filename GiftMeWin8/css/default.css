@@ -1,0 +1,29 @@
+﻿body {
+	background-image:url('/images/gift.png');
+	background-repeat:no-repeat;
+	background-position-x:right;
+	background-position-y:bottom;
+	background-size:25%;
+	background-color:#98CCED
+}
+h1 {
+	color:whitesmoke;
+	font-family:Arial;
+	font-size:100px
+	}
+.win-textarea {
+	background:#98CCED;
+	font-family:Arial;
+	color:#067EC6;
+	font-size:25px
+}
+
+
+
+.mainGrid {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: (1fr)[100];
+    -ms-grid-rows: (1fr)[200];
+}
