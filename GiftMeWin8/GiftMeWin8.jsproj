@@ -62,6 +62,7 @@
     <Content Include="backbone.min.js.map" />
     <Content Include="bootstrap.min.js.map" />
     <Content Include="default.html" />
+    <Content Include="pages\privacypolicy\privacy.html" />
     <Content Include="underscore.min.js.map" />
     <None Include="GiftMeWin8_StoreKey.pfx" />
     <Content Include="images\facebook.png" />

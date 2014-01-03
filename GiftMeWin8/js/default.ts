@@ -27,9 +27,14 @@ module GiftMeApp {
         app.addEventListener("activated", function (args: WinJS.Application.ApplicationActivationEvent) {
 
             if (args.detail.kind === activation.ActivationKind.launch) {
-
+                // else statement omitted in code snippet
                 if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-
+                    // Add privacy policy to settings charm
+                    WinJS.Application.onsettings = function (e) {
+                        e.detail.applicationcommands = { "help": { title: "Privacy policy", href: "/pages/privacypolicy/privacy.html" } };
+                        WinJS.UI.SettingsFlyout.populateSettings(e);
+                    };
+ 
                     
                 } else {
 
