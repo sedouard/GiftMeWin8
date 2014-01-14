@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
-  <Identity Name="52654GVoice.GiftMe" Version="1.1.0.2" Publisher="CN=67A07641-5D67-4A43-A315-AFCC29EAFA02" />
+  <Identity Name="52654GVoice.GiftMe" Version="1.1.0.4" Publisher="CN=67A07641-5D67-4A43-A315-AFCC29EAFA02" />
   <Properties>
     <DisplayName>GiftMe</DisplayName>
     <PublisherDisplayName>GVoice</PublisherDisplayName>

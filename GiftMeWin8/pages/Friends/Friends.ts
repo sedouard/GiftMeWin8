@@ -40,7 +40,7 @@ var g_Friends: Friend[];
                 }
 
                 if ($("#ui_SearchTextBox").val() != "" && $("#ui_SearchTextBox").val().length >= 3) {
-                    g_Client.searchFriends($("#ui_SearchTextBox").val(), function (suceeded, results) {
+                    g_Client.searchFriends($("#ui_SearchTextBox").val(), (suceeded, results) => {
                         showProgressRing(false);
                         if (!suceeded) {
                             console.log("search friends failed");

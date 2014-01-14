@@ -1,8 +1,6 @@
 ﻿/// <reference path="..\typings\jquery\jquery.d.ts" />
 
 class GiftMeClientLibrary {
-    // Completion callback
-    public static onCompleted: { (suceedded: Boolean, shortTermToken: string): void };
 
     m_GiftMeRootUrl: string;
 
@@ -49,7 +47,7 @@ class GiftMeClientLibrary {
 
         $.ajax({
             type: "GET",
-            url: this.m_GiftMeRootUrl + "/friends/searchfriends?sessionToken=" + this.sessionToken + "&name=" + name,
+            url: this.m_GiftMeRootUrl + "/friends/searchfriends?sessionToken=" + this.sessionToken + "&name=" + name + "&pictureType=large",
             data: "",
             cache: false,
             success: function (response) {
